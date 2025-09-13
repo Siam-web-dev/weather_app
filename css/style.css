@@ -489,11 +489,11 @@ color: #FFFFFF;
     }
 
     .details {
-      grid-template-columns: repeat(2,100%);
-      gap: 0px 60px;
+      grid-template-columns: repeat(2, 170px);
+      gap: 0px 50px;
+      margin-left: 20px;
     }
-    .details > .box {
-       width: 120%; 
+    .details > .box { 
       text-align: center; 
       align-items: center;
     }
