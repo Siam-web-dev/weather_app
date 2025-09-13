@@ -429,9 +429,11 @@ color: #FFFFFF;
       font-size: 14px;
     }
     .title > h1 {
-      font-size: 32px;
+      font-size: 52px;
       text-align: center; 
       margin: 24px;
+      font-style: Bold;
+
     }
     .container > .search {
       flex-direction: column;
@@ -458,21 +460,21 @@ color: #FFFFFF;
     .info {
       flex-direction: column;
       align-items: center; 
-      text-align: center; /* Ensures text inside is centered */
+      text-align: center; 
       padding: 24px 0;
     }
     .localion {
       margin-left: 0;
       gap: 8px;
-      width: 100%; /* Ensure it takes full width for proper alignment */
+      width: 100%; 
     }
     .localion h4 {
       font-size: 24px;
-      text-align: center; /* Explicitly center the text */
+      text-align: center; 
     }
     .localion p {
       font-size: 16px;
-      text-align: center; /* Explicitly center the text */
+      text-align: center; 
     }
     .temperature {
       flex-direction: row;
@@ -487,10 +489,11 @@ color: #FFFFFF;
     }
 
     .details {
-      grid-template-columns: repeat(2,150px);
-      gap: 12px;
+      grid-template-columns: repeat(2,100%);
+      gap: 0px 60px;
     }
     .details > .box {
+       width: 120%; 
       text-align: center; 
       align-items: center;
     }
@@ -502,7 +505,7 @@ color: #FFFFFF;
     }
     .daily-container {
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap: 20px;
     }
     .card {
       height: auto;
