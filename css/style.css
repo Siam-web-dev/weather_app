@@ -490,7 +490,7 @@ color: #FFFFFF;
 
     .details {
       grid-template-columns: repeat(2, 150px);
-      gap: 0px 50px;
+      gap: 20px;
     }
     .details > .box { 
       text-align: center; 
