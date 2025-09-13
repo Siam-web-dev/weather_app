@@ -384,12 +384,153 @@ color: #FFFFFF;
     padding: 20px;
 }
 
-@media (max-width:768px) {
-    .head{
-        width: 720px;
-        height: 43px;
-        display: flex;
-        
+@media (max-width: 1024px) {
+    body {
+      width: auto;
     }
-    
-}
+    .head {
+      margin: 24px 20px;
+    }
+    .container > .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .left-container, .info, .details, .daily-txt, .daily-container, .right-container {
+      width: 100%;
+      max-width: 720px; 
+    }
+    .details {
+      grid-template-columns: repeat(4, 165px);
+      width: 165px;
+      gap: 16px;
+    }
+    .daily-container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+    .right-container {
+      width: 100%;
+      max-width: 720px;
+      grid-template-rows: auto;
+    }
+    .hourly-card {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .head {
+      margin: 16px 12px;
+    }
+    .head > .logo h3 {
+      font-size: 16px;
+    }
+    .head > .units p {
+      font-size: 14px;
+    }
+    .title > h1 {
+      font-size: 32px;
+      text-align: center; 
+      margin: 24px;
+    }
+    .container > .search {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 32px;
+      padding: 0 20px;
+    }
+    .container > .search > .input {
+      width: 100%;
+    }
+    .container > .search > .primary button {
+      width: 100%;
+    }
+    .container > .content {
+      padding: 0 20px;
+    }
+    .left-container,.right-container {
+      width: 100%;
+      max-width: none;
+      margin-top: 24px;
+    }
+  
+    .info {
+      flex-direction: column;
+      align-items: center; 
+      text-align: center; /* Ensures text inside is centered */
+      padding: 24px 0;
+    }
+    .localion {
+      margin-left: 0;
+      gap: 8px;
+      width: 100%; /* Ensure it takes full width for proper alignment */
+    }
+    .localion h4 {
+      font-size: 24px;
+      text-align: center; /* Explicitly center the text */
+    }
+    .localion p {
+      font-size: 16px;
+      text-align: center; /* Explicitly center the text */
+    }
+    .temperature {
+      flex-direction: row;
+      justify-content: center;
+      margin-right: 0;
+      gap: 10px;
+      width: 100%;
+    }
+    .temperature h1 {
+      font-size: 72px;
+      margin-right: 0;
+    }
+
+    .details {
+      grid-template-columns: repeat(2,150px);
+      gap: 12px;
+    }
+    .details > .box {
+      text-align: center; 
+      align-items: center;
+    }
+    .daily-txt {
+      margin-left: -310px;
+    }
+    .daily-txt h3 {
+      text-align: center;
+    }
+    .daily-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .card {
+      height: auto;
+    }
+    .right-container {
+      padding: 16px;
+      width: 343px;
+      height: 685px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 520px;
+    }
+    .hourly > div {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+    .hourly-card {
+      padding: 10px;
+      height: 60px;
+    }
+    .hourly-card img {
+      width: 30px;
+      height: 30px;
+    }
+    .hourly-card h2 {
+      font-size: 18px;
+    }
+    .hourly-card div p {
+      font-size: 16px;
+    }
+  }
