@@ -491,7 +491,7 @@ color: #FFFFFF;
     .details {
       grid-template-columns: repeat(2, 170px);
       gap: 0px 50px;
-      margin-left: 20px;
+      /* margin-left: 20px; */
     }
     .details > .box { 
       text-align: center; 
